@@ -1,268 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GeoMaster - World Map Quiz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoMaster - World Map Quiz</title>
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-<nav class="navbar">
+  <nav class="navbar">
+    <div class="logo">🌍 GeoMaster</div>
 
-<div class="logo">
-🌍 GeoMaster
-</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Countries</a></li>
+      <li><a href="#">Flags</a></li>
+      <li><a href="#">Capitals</a></li>
+      <li><a href="#">Leaderboard</a></li>
+    </ul>
 
-<ul class="menu">
-<li><a href="#">Home</a></li>
-<li><a href="#">Countries</a></li>
-<li><a href="#">Flags</a></li>
-<li><a href="#">Capitals</a></li>
-<li><a href="#">Leaderboard</a></li>
-</ul>
-
-<a href="#" class="play-btn">Play Now</a>
-
-</nav>
+    <a href="#" class="play-btn">Play Now</a>
+  </nav>
 </header>
 
 <section class="hero">
 
-<div class="hero-text">
+  <div class="hero-text">
+    <h1>Master The World Geography</h1>
 
-<h1>Master The World Geography</h1>
+    <p>
+      Explore countries, flags, capitals and improve your geography skills.
+    </p>
 
-<p>
-Explore countries, flags, capitals and improve your geography skills.
-</p>
+    <a href="#" class="start-btn">Start Quiz</a>
+  </div>
 
-<a href="#" class="start-btn">
-Start Quiz
-</a>
-
-</div>
-
-<div class="hero-image">
-
-🌎
-
-</div>
+  <div class="hero-image">
+    🌎
+  </div>
 
 </section>
 
 <section class="features">
 
-<div class="card">
+  <div class="card">
+    <h2>🌍 Countries</h2>
+    <p>Guess every country on Earth.</p>
+  </div>
 
-<h2>🌍 Countries</h2>
+  <div class="card">
+    <h2>🏳 Flags</h2>
+    <p>Recognize hundreds of flags.</p>
+  </div>
 
-<p>
-Guess every country on Earth.
-</p>
+  <div class="card">
+    <h2>🏛 Capitals</h2>
+    <p>Learn world capitals easily.</p>
+  </div>
 
-</div>
-
-<div class="card">
-
-<h2>🏳 Flags</h2>
-
-<p>
-Recognize hundreds of flags.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>🏛 Capitals</h2>
-
-<p>
-Learn world capitals easily.
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>🏆 Leaderboard</h2>
-
-<p>
-Compete with players worldwide.
-</p>
-
-</div>
+  <div class="card">
+    <h2>🏆 Leaderboard</h2>
+    <p>Compete with players worldwide.</p>
+  </div>
 
 </section>
 
 <footer>
-
-<p>
-
-© 2026 GeoMaster
-
-</p>
-
+  <p>© 2026 GeoMaster</p>
 </footer>
 
 <script src="script.js"></script>
 
 </body>
 </html>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-background:#071826;
-color:#fff;
-}
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#0d2338;
-position:sticky;
-top:0;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#00d4ff;
-}
-
-.menu{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-.menu a{
-text-decoration:none;
-color:white;
-font-weight:600;
-}
-
-.play-btn{
-background:#00d4ff;
-color:#071826;
-padding:10px 20px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:80px 8%;
-min-height:90vh;
-}
-
-.hero-text{
-max-width:550px;
-}
-
-.hero h1{
-font-size:55px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-color:#d8d8d8;
-margin-bottom:35px;
-}
-
-.start-btn{
-background:#00d4ff;
-padding:15px 35px;
-border-radius:40px;
-text-decoration:none;
-color:#071826;
-font-weight:bold;
-font-size:18px;
-}
-
-.hero-image{
-font-size:180px;
-animation:float 3s ease-in-out infinite;
-}
-
-.features{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-padding:70px 8%;
-}
-
-.card{
-background:#10263d;
-padding:30px;
-border-radius:18px;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h2{
-margin-bottom:15px;
-color:#00d4ff;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#0d2338;
-margin-top:30px;
-}
-
-@keyframes float{
-0%{transform:translateY(0);}
-50%{transform:translateY(-20px);}
-100%{transform:translateY(0);}
-}
-
-@media(max-width:768px){
-
-.navbar{
-flex-direction:column;
-gap:15px;
-}
-
-.menu{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.hero{
-flex-direction:column;
-text-align:center;
-}
-
-.hero h1{
-font-size:38px;
-}
-
-.hero-image{
-font-size:120px;
-margin-top:30px;
-}
-
-}
-
-
